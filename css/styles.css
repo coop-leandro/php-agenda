@@ -80,3 +80,10 @@
     padding: 10px;
     text-decoration: none;
 }
+
+/* create */
+
+.create-form{
+    max-width: 500px;
+    margin: 0 auto;
+}
