@@ -27,7 +27,7 @@
                             <a href="<?= $BASE_URL ?>show.php?id=<?=$contact['id']?>">
                                 <i class="fas fa-eye check-icon"></i>
                             </a>
-                            <a href="#">
+                            <a href="<?= $BASE_URL ?>edit.php?id=<?=$contact['id']?>">
                                 <i class="far fa-edit edit-icon"></i>
                             </a>
                             <button type="submit" class="delete-btn"><i class="fas fa-times delete-icon"></i></button>
