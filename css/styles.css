@@ -55,3 +55,28 @@
 .col-id{
     font-weight: bold;
 }
+
+/* view */
+
+.view-contact-container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.back-link-container{
+    max-width: 500px;
+    margin: 30px auto 0;
+    display: block;
+}
+
+.back-link{
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 7px;
+    padding: 10px;
+    text-decoration: none;
+}
