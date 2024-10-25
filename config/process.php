@@ -42,9 +42,21 @@
             $stmt->bindParam(":id", $id);
 
             try {
-
                 $stmt->execute();
                 $_SESSION["msg"] = "Contato atualizado com sucesso!";
+            
+            } catch(PDOException $e) {
+                $error = $e->getMessage();
+                echo "Erro: $error";
+            }
+        }else if($data["type"] === "delete"){
+            $id = $data["id"];
+            $query = "DELETE FROM contacts WHERE id = :id";
+            $stmt = $conn->prepare($query);
+            $stmt->bindParam(":id", $id);
+            try {
+                $stmt->execute();
+                $_SESSION["msg"] = "Contato deletado com sucesso!";
             
             } catch(PDOException $e) {
                 $error = $e->getMessage();
