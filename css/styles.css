@@ -38,6 +38,11 @@
 .edit-icon{
     color: #007bff;
 }
+
+.delete-form{
+    display: inline-block;
+}
+
 .delete-icon{
     color: red;
 }
